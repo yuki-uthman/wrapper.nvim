@@ -6,9 +6,6 @@ local M = {}
 
 function M.setup(opts)
 	template.setup(opts)
-
-	vim.keymap.set("n", "<c-r>", M.wrap_under_cursor)
-	vim.keymap.set("i", "<c-r>", M.wrap_variable)
 end
 
 function M.wrap_under_cursor()
